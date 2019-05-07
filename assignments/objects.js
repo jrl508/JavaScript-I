@@ -19,20 +19,42 @@ const example = {
 
 // Write your intern objects here:
 
-
-// ==== Challenge 2: Reading Object Data ==== 
-// Once your objects are created, log out the following requests from HR into the console:
-
-// Mitzi's name
-
-// Kennan's ID
-
-// Keven's email
-
-// Gannie's name
-
-// Antonietta's Gender
-
+const intern = [
+  {  "id": 1,
+    "name": "Mitzi",
+    "email": "mmelloy0@psu.edu",
+    "gender": "F"
+    }
+  ]
+  
+  function addIntern(id,email,name,gender) { 
+    intern.push({  id: id,
+    name: name,
+    email: email,
+    gender: gender});
+  
+    console.log("New intern added, Name: " + name)
+  }
+  addIntern( 2,"kdiben1@tinypic.com","Kennan","M");
+  addIntern(3,"kmummery2@wikimedia.org","Keven","M");
+  addIntern(4,"gmartinson3@illinois.edu","Gannie","M")
+  addIntern( 5,"adaine5@samsung.com","Antonietta","F")
+  
+  // ==== Challenge 2: Reading Object Data ==== 
+  // Once your objects are created, log out the following requests from HR into the console:
+  
+  // Mitzi's name
+  console.log("name requested : " + intern[0].name);
+  
+  // Kennan's ID
+  console.log("Keenan's ID: " + intern[1].id);
+  // Keven's email
+  console.log("Keven's Email: " + intern[2].email);
+  // Gannie's name
+  console.log("name requested : " + intern[3].name);
+  // Antonietta's Gender
+  console.log("Antonietta's gender : " + intern[4].gender);
+  
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
